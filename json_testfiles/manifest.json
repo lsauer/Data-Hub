@@ -1,0 +1,17 @@
+{
+  "name": "Auto Enable Timeline",
+  "description": "Automatically enable the new Timeline feature",
+  "version": "0.1",
+  "app": {
+    "launch": {
+      "local_path": "main.html"
+    }
+  },
+  "icons": {
+    "16": "16.png",
+    "128": "128.png"
+  },
+  "permissions": [
+    "https://*.facebook.com/"
+  ]
+}
