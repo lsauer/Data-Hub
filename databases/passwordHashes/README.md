@@ -1,5 +1,7 @@
-Anonymous data excerpts containing user password hashes of the June 2012 Data breaches
-See also: http://goo.gl/5txkV
+##Anonymous data excerpts containing user password hashes of the June 2012 Data breaches
+
+See: http://goo.gl/5txkV
+
 ---
 
 ###Intended Use:
@@ -23,6 +25,9 @@ See also: http://goo.gl/5txkV
 
 - Password cracking software http://en.wikipedia.org/wiki/Password_cracking
 - Openwall Project http://en.wikipedia.org/wiki/Openwall_Project
+
+---
+
 
 - have phun! 
 
