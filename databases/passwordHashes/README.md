@@ -2,15 +2,16 @@ Anonymous data excerpts containing user password hashes of the June 2012 Data br
 See also: http://goo.gl/5txkV
 ---
 
-###Intend:
+###Intended Use:
 - better UI design
 - raising password security awareness
 - improving developer standards towards password security
 - password analysis
+- benchmarking
 
 ###Name Format:
   
-  SiteName_[note:unconfirmed|confirmed|non-redundant]_[state:original|shuffled]_SizeExcerpt
+  SiteName_ [note:unconfirmed|confirmed|non-redundant]_ [state:original|shuffled]_SizeExcerptPercent
 
 ###Useful Tools:
 
@@ -25,4 +26,4 @@ See also: http://goo.gl/5txkV
 
 - have phun! 
 
-*Contact me for comprehensive dataset:. @sauerlo*
+*Contact me for complete, related or recovered datasets: @sauerlo*
