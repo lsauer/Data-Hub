@@ -1,4 +1,5 @@
-##Anonymous data excerpts containing user password hashes of the June 2012 Data breaches
+##user password hash-lists
+###Anonymous data excerpts containing user password hashes of the June 2012 Data breaches
 
 See: http://goo.gl/5txkV
 
@@ -28,7 +29,7 @@ See: http://goo.gl/5txkV
 
 ---
 
-
+- for creating shuffled, percentage-cut files see: https://gist.github.com/2900646
 - have phun! 
 
 *Contact me for complete, related or recovered datasets: @sauerlo*
