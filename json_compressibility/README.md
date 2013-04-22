@@ -1,25 +1,53 @@
-### specific JSON Compressibility Test
-short test on the compressibility of JSON data
-original: crime-data_geojson.json 72844By
+JSON Compressibility Shootout
+=============================
 
-except for zip all parameters were set to ultra
+### Specific Compressibility Test
 
-* cm/ nanozip: 
-  > 4076/72844
-  [1] 0.05595519
-* gzip:
-  > 6611/72844
-  [1] 0.09075559
-* LZMA / 7zip
-  > 5864/72844
-  [1] 0.0805008
-* Huffman / zip:
-  > 7382/72844
-  [1] 0.1013398
-* ?/Arc:
-  > 4739/72844
-  [1] 0.06505683
-  
-### Result:
-nanozip archieves almost twice the compression of zip. Overall JSON is usually highly compressible as in most scenarios the packaged data is highly repetitive
-Special JSON compressors could be written which utilize the advantage of pre-existing data structure and metadata availability (JSON-container)
+Following is the concise test on the compressibility of JSON data
+#### JSON test file(s)
+
+- `name:     crime-data_geojson.json`
+- `size:     72844By`
+
+Note: The file above was determined to serve well as an average JSON data content.
+
+#### Tests, Q4/2011
+
+With the exception of `zip`, all parameters/configurations were set to `ultra`
+
+* `algoritm: cm | app: nanozip` 
+
+  > 4076By/72844By  
+  [1] 0.0559552
+```
+
+* `algoritm: gzip | app: gzip`
+
+    > 6611By/72844By  
+  [1] 0.0907556
+```
+
+* `algoritm: LZMA | app: 7zip`
+
+      > 5864By/72844By  
+   [1] 0.080501
+```
+
+* `algoritm: Huffman | app: zip`
+
+    > 7382By/72844By  
+  [1] 0.101340
+```
+
+* `algoritm: ? | app: src`
+
+    > 4739By/72844By  
+  [1] 0.0650568
+```
+
+#### Results:
+
+- `nanozip`(http://www.nanozip.net/) archieves almost twice the compression of `zip`.
+- Overall, JSON is usually highly compressible
+- In most scenarios the data content is highly repetitive
+- Special JSON compressors could be implemented, which utilize the advantage of pre-existing data structures and metadata availability (JSON-container). `MessagePack` (http://msgpack.org/)) may be used as a precursor towards that goal.
